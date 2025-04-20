@@ -15,11 +15,11 @@ public class AdminLoggingInterceptor implements HandlerInterceptor {
 
         LocalDateTime now = LocalDateTime.now();
 
-        log.info("User ID : {}, User Role : {}, Request URL : {}, Timestamp : {}",
+        log.info("User ID : {}, User Role : {}, Timestamp : {}, Request URL : {}",
                 request.getAttribute("userId"),
                 request.getAttribute("userRole"),
-                request.getRequestURI(),
-                now);
+                now,
+                request.getRequestURI());
         return true;
     }
 }
