@@ -1,4 +1,4 @@
-package org.example.expert.config;
+package org.example.expert.config.jwt;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
